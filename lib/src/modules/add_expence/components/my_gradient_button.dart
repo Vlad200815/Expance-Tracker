@@ -3,12 +3,19 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class MyGradientButton extends StatelessWidget {
-  const MyGradientButton({super.key});
+  final double horizontal;
+  final void Function()? onPressed;
+
+  const MyGradientButton({
+    required this.horizontal,
+    required this.onPressed,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 120),
+      padding: EdgeInsets.symmetric(horizontal: horizontal),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         gradient: LinearGradient(
@@ -21,7 +28,7 @@ class MyGradientButton extends StatelessWidget {
         ),
       ),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: onPressed,
         child: const Text(
           "SAVE",
           style: TextStyle(

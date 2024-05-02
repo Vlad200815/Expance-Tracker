@@ -5,20 +5,22 @@ class MyInput extends StatelessWidget {
   final Widget icon;
   String? hint;
   TextStyle? hintStyle;
-  final TextEditingController controller;
+  TextEditingController? controller;
   final bool readOnly;
   final BorderRadius borderRadius;
   Widget? suffixIcon;
   void Function()? onTap;
+  final Color? fillColor;
 
   MyInput({
     this.suffixIcon,
     this.hint,
     this.hintStyle,
     this.onTap,
+    required this.fillColor,
     required this.borderRadius,
     required this.readOnly,
-    required this.controller,
+    this.controller,
     required this.icon,
     required this.radius,
     super.key,
@@ -33,7 +35,7 @@ class MyInput extends StatelessWidget {
       textAlignVertical: TextAlignVertical.center,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.white,
+        fillColor: fillColor,
         prefixIcon: icon,
         suffixIcon: suffixIcon,
         hintText: hint,

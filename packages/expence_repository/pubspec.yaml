@@ -1,5 +1,5 @@
-name: ttd_practice
-description: "A new Flutter project."
+name: expence_repository
+description: "Backend for expences"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -30,36 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  #Custom Dependencies
-  # user_repository:
-  #   path: packages/user_repository
-
-  expence_repository:
-    path: packages/expence_repository
-    
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.6
-  get_it: ^7.6.9
-  bloc: ^8.1.4 
-  flutter_bloc: ^8.1.5
-  equatable: ^2.0.5 
-  # dartz: ^0.10.1
-  # connectivity:
-  # http: ^1.2.1 
-  # shared_preferences: ^2.2.3
-  # mockito: ^5.4.4
-  font_awesome_flutter: ^10.6.0
+  cloud_firestore: 
+  firebase_auth: ^4.19.4
+  equatable: ^2.0.5
+  
 
 
   
-  fl_chart: ^0.67.0
-  intl: ^0.19.0
-  flutter_colorpicker: ^1.0.3
-
-  cloud_firestore: ^4.17.2
-  firebase_core: ^2.30.1
+  
   
 
 dev_dependencies:
@@ -85,9 +63,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
+  # assets:
     
-    - assets/
+  #   - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

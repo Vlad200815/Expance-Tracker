@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087573506516",
+    "project_id": "expence-tracker-39050",
+    "storage_bucket": "expence-tracker-39050.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087573506516:android:335598e171c041f9ba3e41",
+        "android_client_info": {
+          "package_name": "com.example.ttd_practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqm_-3GNet0HA1e71LpKSbgfKIx_4mbSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
